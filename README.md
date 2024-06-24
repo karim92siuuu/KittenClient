@@ -41,6 +41,6 @@ to discuss what you would like to change.
 
 ## Credits
 + [irrvlo](https://github.com/irrvlo)
-
++ [Juice Client](https://github.com/irrvlo/juice-client)
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
