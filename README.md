@@ -25,9 +25,10 @@ Join the [discord](https://discord.gg/uVtGcp9Cng) for support.
 - **Auto Fullscreen**
 - **Experimental Flags**
 
-> [**!NOTE**]\
-> **Useful information that users should know, even when skimming content.**
-
+| Command | Description |
+| --- | --- |
+| git status | List all new or modified files |
+| git diff | Show file differences that haven't been staged |
 ## **Hotkeys**
 
 Pull requests are welcome. For major changes, please open an issue first
