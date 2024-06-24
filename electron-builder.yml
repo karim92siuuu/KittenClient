@@ -1,0 +1,16 @@
+appId: com.kittenclient.app
+productName: Kitten Client
+directories:
+  output: "build"
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+        - ia32
+  icon: "src/assets/img/icon.png"
+  artifactName: "${name}-setup-win-${arch}-${version}.${ext}"
+mac:
+  target: dmg
+  icon: "src/assets/img/icon.icns"
+  artifactName: "${name}-setup-mac-${version}.${ext}"
