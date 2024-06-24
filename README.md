@@ -24,17 +24,20 @@ Join the [discord](https://discord.gg/uVtGcp9Cng) for support.
 - **Interface opacity and bounds**
 - **Auto Fullscreen**
 - **Experimental Flags**
+**AND MORE...**
 
-| Command | Description |
-| --- | --- |
-| git status | List all new or modified files |
-| git diff | Show file differences that haven't been staged |
 ## **Hotkeys**
+| Hotkeys | Description |
+| --- | --- |
+| F3  | Quick Queue |
+| F4  | Return to https://kirka.io |
+| F5  | Reload |
+| F6  | Load URL |
+| F11 | Fullscreen |
+| F12 & Ctrl + Shift + I| Open DevTools |
 
 Pull requests are welcome. For major changes, please open an issue first
 to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
