@@ -39,5 +39,8 @@ Join the [discord](https://discord.gg/uVtGcp9Cng) for support.
 Pull requests are welcome. For major changes, please open an issue first
 to discuss what you would like to change.
 
+## Credits
++ [irrvlo](https://github.com/irrvlo/juice-client)
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
