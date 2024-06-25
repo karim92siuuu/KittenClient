@@ -6,13 +6,13 @@ const Store = require('electron-store');
 
 
 const initResourceSwapper = () => {
-  protocol.registerFileProtocol("karimcustomclient", (request, callback) =>
-    callback({ path: request.url.replace("karimcustomclient://", "") })
+  protocol.registerFileProtocol("kittenclient", (request, callback) =>
+    callback({ path: request.url.replace("kittenclient://", "") })
   );
 
   const SWAP_FOLDER = path.join(
     app.getPath("documents"),
-    "KarimCustomClient",
+    "KittenClient",
     "swapper"
   );
 
@@ -42,7 +42,7 @@ const initResourceSwapper = () => {
       if (fs.statSync(filePath).isDirectory()) allFilesSync(filePath);
       else {
         const useAssets =
-          /KarimCustomClient[\\/]swapper[\\/]assets[\\/](css|media|img|glb)[\\/].*\.(.{4})/.test(
+          /KittenClient[\\/]swapper[\\/]assets[\\/](css|media|img|glb)[\\/].*\.(.{4})/.test(
             filePath
           );
         if (!useAssets) return;
@@ -69,7 +69,7 @@ const initResourceSwapper = () => {
       swap.filter,
       (details, callback) => {
         const redirect =
-          "karimcustomclient://" +
+          "kittenclient://" +
           (swap.files[details.url.replace(/https|http|(\?.*)|(#.*)/gi, "")] ||
             details.url);
         callback({ cancel: false, redirectURL: redirect });

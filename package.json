@@ -7,13 +7,16 @@
     "start": "electron .",
     "build": "electron-builder"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karim92siuuu/KittenClient.git"
+  },
   "keywords": [],
-  "author": "Karim",
-  "license": "ISC",
+  "author": "karim92siuuu",
+  "license": "MIT",
   "devDependencies": {
     "electron": "^10.4.7",
-    "electron-builder": "^22.14.13",
-    "electron-packager": "^17.1.2"
+    "electron-builder": "^22.14.13"
   },
   "dependencies": {
     "discord-rpc-revamp": "^2.0.4",

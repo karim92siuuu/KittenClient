@@ -1,5 +1,5 @@
 appId: com.kittenclient.app
-productName: Kitten Client
+productName: KittenClient
 directories:
   output: "build"
 win:
@@ -9,8 +9,8 @@ win:
         - x64
         - ia32
   icon: "src/assets/img/icon.png"
-  artifactName: "${name}-setup-win-${arch}-${version}.${ext}"
+  artifactName: "${productName} Setup Win-${arch} V.${version}.${ext}"
 mac:
   target: dmg
   icon: "src/assets/img/icon.icns"
-  artifactName: "${name}-setup-mac-${version}.${ext}"
+  artifactName: "${productName}-setup-mac-${version}.${ext}"

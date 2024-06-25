@@ -12,10 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   ipcRenderer.send("check-for-updates");
-  updateStatus("Hacking you LMAO...");
+  updateStatus("Waiting...");
 
   ipcRenderer.on("update-available", () => {
-    updateStatus("HACK DETECTED! Downloading...");
+    updateStatus("Downloading...");
   });
 
   ipcRenderer.on("update-not-available", () => {
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   ipcRenderer.on("update-downloaded", () => {
-    updateStatus("Hack download. Installing...");
+    updateStatus("Installing...");
     ipcRenderer.send("quit-and-install");
   });
 

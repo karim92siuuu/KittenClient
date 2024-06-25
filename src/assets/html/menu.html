@@ -1,20 +1,15 @@
 <style>
-:root {
-  --menu-bg-start: #000000a1;
-  --menu-bg-end: rgba(26, 141, 131, 0.631);
-}
-
-.menu {
-  width: 40rem;
-  height: 35rem;
-  border-radius: 1rem;
-  background: url("https://cdn.discordapp.com/attachments/1254856044199411843/1254857318642880624/kitten.png?ex=667b0472&is=6679b2f2&hm=879c70885d56bd09a0acef7bd242aa7d60b699c70f2f5f635b608841544cb882&");
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  display: flex;
-  overflow: hidden;
-  padding: 0.5rem;
-  display: none;
-}
+  .menu {
+    width: 40rem;
+    height: 35rem;
+    border-radius: 1rem;
+    background: linear-gradient(0deg, #245f7aa1, #000000a1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    overflow: hidden;
+    padding: 0.5rem;
+    display: none;
+  }
 
   .menu[data-active="true"] {
     display: block;
@@ -106,7 +101,7 @@
     border-radius: 0.5rem;
     color: white;
     border: 2px solid rgba(255, 255, 255, 0.2);
-    background: linear-gradient(45deg, var(--menu-bg-end), rgb(164, 194, 194));
+    background: linear-gradient(45deg, #ff922d20, #acfa7020);
     outline: none;
   }
 
@@ -128,11 +123,11 @@
 
   .menu .tab.active {
     border: 2px solid rgba(255, 255, 255, 0.2);
-    background: rgba(26, 141, 131, 0.631);
+    background: #122a3a8c;
   }
 
   .menu .option-group {
-    background: rgba(26, 141, 131, 0.631);
+    background: #1c39508c;
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 0.5rem;
     display: flex;
@@ -171,12 +166,11 @@
     }
   }
 </style>
-
 <div class="menu" data-active="true">
   <div class="container">
     <div class="sidebar">
       <div class="nav">
-        <input type="image" src="https://media.discordapp.net/attachments/1254856044199411843/1254878701078843503/backgrounder.png?ex=667b185c&is=6679c6dc&hm=56cd0059239c08f3a2166bbb2dde3fd2bfe28b45204003a4ddef4b2192e1abd3&=&quality=lossless" class="juice image" height="80"/>
+        <input type="text" class="juice search" placeholder="Search" />
         <span class="sep"></span>
         <div data-tab="ui" class="juice tab active">UI</div>
         <div data-tab="performance" class="juice tab">Performance</div>
@@ -212,7 +206,7 @@
             <input type="checkbox" data-setting="css_enabled" />
           </div>
           <div class="option">
-            <span>CSS CODE</span>
+            <span>CSS Code</span>
             <input type="text" / data-setting="css_link">
           </div>
           <div class="option">
@@ -238,7 +232,28 @@
             <input type="checkbox" / data-setting="skip_loading">
           </div>
         </div>
-        
+        <div class="option-group">
+          <div class="option">
+            <span>Interface Opacity</span>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              class="range"
+              data-setting="interface_opacity"
+            />
+          </div>
+          <div class="option">
+            <span>Interface Bounds</span>
+            <input
+              type="range"
+              min="0"
+              max="2"
+              class="range"
+              data-setting="interface_bounds"
+            />
+          </div>
+        </div>
       </div>
       <div id="performance-options" class="juice options">
         <div class="option-group">
