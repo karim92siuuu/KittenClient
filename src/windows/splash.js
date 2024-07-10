@@ -75,7 +75,7 @@ const handleClose = () => {
 };
 
 const initSplash = () => {
-  console.log(isPackaged ? 'Hacking you lmao...' : 'Running unpacked, skipped update check...');
+  console.log(isPackaged ? 'Waiting...' : 'Running unpacked, skipped update check...');
   if (isPackaged) {
     checkForUpdates();
   } else {
